@@ -47,10 +47,10 @@ def measure_time(func, data):
     Returns:
         Execution time in seconds
     """
-    start = time.perf_counter()
-    func(data)
-    end = time.perf_counter()
-    return end - start
+    start = time.perf_counter() # Start timer
+    func(data) # Run function
+    end = time.perf_counter() # End timer
+    return end - start # Calculate elapsed time
 
 
 def run_performance_tests():
